@@ -32,6 +32,9 @@ export default function index(props) {
         <Button title='Ir a Training'
         onPress={()=>navigation.navigate("Smart", {screen :"Training"})}
         />
+         <Button title='logout'
+        onPress={()=>{firebase.auth().signOut()}}
+        />
       </View>
     )
   }else{

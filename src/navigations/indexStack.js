@@ -13,7 +13,7 @@ export default function indexStack(props) {
   return (
       <Stack.Navigator>
           <Stack.Screen name='Index' component={Index} 
-          options={{headerShown:false, title: "Inicio", headerLeft:()=><Icon onPress={() => navigation.openDrawer()} type='material-community' name='menu' size={22} color={"black"}/>}}/>
+          options={{headerShown:true, title: "Inicio", headerLeft:()=><Icon onPress={() => navigation.openDrawer()} type='material-community' name='menu' size={22} color={"black"}/>}}/>
           <Stack.Screen name='Register' component={Register} options={{title: "Registrate"}}/>
       </Stack.Navigator>
   )
